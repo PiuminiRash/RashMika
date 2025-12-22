@@ -13,45 +13,6 @@ export default function Projects() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-36 text-white">
-
-      {/* ===== Header ===== */}
-      <div className="text-center mb-16">
-        <p className="text-xs tracking-widest text-yellow-400 uppercase">
-          Project
-        </p>
-        <h2 className="text-3xl font-bold mt-2">
-          My Full-Stack Project Collection
-        </h2>
-        <p className="text-sm text-white/60 mt-4 max-w-xl mx-auto">
-          These are some of the full-stack applications I’ve built recently, 
-          covering both frontend and backend development. Have a look at them
-          and let me know what you think.
-        </p>
-
-        <div className="w-20 h-[2px] bg-yellow-400 mx-auto mt-6" />
-      </div>
-
-      {/* ===== Projects Grid ===== */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-20">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            className="rounded-xl overflow-hidden border border-white/10"
-          >
-            <img
-              src={project.image}
-              alt="Project"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Divider */}
-      <div className="w-20 h-[2px] bg-yellow-400 mx-auto mb-16" />
-
       {/* ===== Header ===== */}
       <div className="text-center mb-16">
         <p className="text-xs tracking-widest text-yellow-400 uppercase">
