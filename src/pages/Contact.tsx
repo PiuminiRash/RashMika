@@ -81,7 +81,6 @@ function Contact() {
             <div className="relative">
               <textarea
                 placeholder="MESSAGE"
-                rows="1"
                 className="bg-transparent border-b border-gray-700 w-full py-2 text-[10px] tracking-widest focus:outline-none focus:border-white transition resize-none"
               />
             </div>
