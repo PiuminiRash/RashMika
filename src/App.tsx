@@ -1,11 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
-import Loader from "./components/Loader";
-import { useEffect, useState } from "react";
 
 const router = createBrowserRouter(
   [
@@ -13,10 +12,10 @@ const router = createBrowserRouter(
       path: "/",
       element: <RootLayout />,
       children: [
-        { index: true, element: <Home/> },
-        { path: "about", element: <About/> },
-        { path: "works", element: <Works/> },
-        { path: "contact", element: <Contact/> },
+        { index: true, element: <Home /> },
+        { path: "about", element: <About /> },
+        { path: "works", element: <Works /> },
+        { path: "contact", element: <Contact /> },
       ],
     },
   ],
@@ -26,13 +25,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
-
-  return loading ? <Loader /> : <RouterProvider router={router} />;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
