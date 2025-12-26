@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/RashMika", // 👈 REQUIRED FOR GITHUB PAGES
+    basename: "/RashMika", // 🔴 REQUIRED
   }
 );
 
