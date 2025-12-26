@@ -1,4 +1,4 @@
-import './background.css'
+import '/srs/components/background.css'
 
 export default function Background() {
     return (
